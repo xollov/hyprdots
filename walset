@@ -1,0 +1,5 @@
+#!/bin/bash
+
+img=$1
+
+matugen image "$img" -m dark --source-color-index 0  &> /dev/null

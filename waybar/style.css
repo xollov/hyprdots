@@ -1,0 +1,52 @@
+@import "colors.css";
+
+* {
+    border: none;
+    min-height: 10px; 
+    color: @on_primary;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 1.2rem;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+
+/* modules */
+
+#workspaces,
+#clock,
+#cpu,
+#pulseaudiao,
+#network,
+#battery,
+#disk,
+#pulseaudio
+{
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    background-color: @primary;
+    transition: none;
+    border-radius: 10px;
+}
+
+#workspaces {
+    background: none;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+#workspaces button {
+    background-color: @primary;
+    padding: 3px 5px 3px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#workspaces button.active {
+    background-color: @secondary;
+    color: @on_secondary;
+}
+
